@@ -1,0 +1,10 @@
+---
+- name: Test the collection downloaded from Automation Hub
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  roles:
+    - role: demo.platform.hello
+      hello_name: "Jin"
+      hello_output_dir: "/tmp/ansible-hub-verification"
